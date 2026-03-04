@@ -1,0 +1,85 @@
+{
+  "projectType": "saas",
+  "projectName": "Blackbox",
+  "projectDescription": "A full-stack experimentation platform featuring hotel booking system, AI integrations, and interactive UI/UX components.",
+  "theme": "palm",
+  "primaryColor": "#3b82f6",
+  "lightColor": "#60a5fa",
+  "darkColor": "#2563eb",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Frontend",
+            "pages": [
+              "frontend/overview",
+              "frontend/routing",
+              "frontend/components",
+              "frontend/animations",
+              "frontend/internationalization"
+            ]
+          },
+          {
+            "group": "Backend",
+            "pages": [
+              "backend/overview",
+              "backend/api-endpoints",
+              "backend/database-models",
+              "backend/stripe-integration"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/booking-platform",
+              "features/experiments",
+              "features/ai-integration",
+              "features/ui-ux-showcase"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api/hotels",
+              "api/bookings",
+              "api/stripe"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Full-stack hotel booking platform with Stripe integration",
+    "Modular experimentation system with multiple project showcases",
+    "React-based frontend with TanStack Router and React Query",
+    "Express/MongoDB backend with TypeScript",
+    "Internationalization support (i18n)",
+    "Smooth animations with GSAP and Framer Motion",
+    "AI integration with OpenAI API"
+  ],
+  "publicApiSurface": [
+    "GET /api/hotels - Fetch available hotels",
+    "POST /api/bookings - Create a new booking",
+    "GET /api/bookings/:id - Get booking details",
+    "POST /api/stripe/create-checkout-session - Create Stripe payment session",
+    "POST /api/stripe/webhook - Handle Stripe webhooks",
+    "Hotel model with booking availability",
+    "Booking model with payment status tracking",
+    "Subscription and Transaction models for payment tracking"
+  ]
+}
